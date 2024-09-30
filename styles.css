@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:'papyrus', fantasy;
+    padding: .5em;
+    background-color: #f4f4f4;
+    color:rgb(71, 2, 71);
+
+}
+header h1, footer{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-image: linear-gradient(to right, black, rgb(71, 2, 71));
+    color: darkgray;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li a{
+    text-decoration: none;
+    color:rgb(71, 2, 71);
+    background-color: darkgray;
+    display: block;
+    padding: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: .2rem inset black;
+}
+.main p{
+    text-align: left;
+    padding:1rem;
+    background-color: gainsboro;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.images{
+    display: none;
+}
+@media(min-width:1024px){
+    
+    .images{
+        display: flex;
+        justify-content: space-around;
+        margin: .3rem
+    }
+    .images img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .images figcaption{
+        text-align: center;
+    }
+    header h1{
+        background-image: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-image: linear-gradient(to right, black, rgb(71, 2, 71));
+        align-items: center;
+    }
+    .main p{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
